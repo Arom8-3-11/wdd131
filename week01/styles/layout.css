@@ -1,0 +1,30 @@
+:root{
+    --primary-color: steelblue;
+    --secondary-color: gray;
+    --accent1-color: black;
+    --nav-background-color: #216298;
+    --nav-link-color: white;
+    --nav-hover-link-color: #ADF7FF;
+    --nav-hover-background-color: #064980;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, main, footer{
+    max-width: 840px;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: steelblue;
+    box-shadow: 0 3px 10px 5px lightgray;
+    text-align: center;
+    border: 2px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid steelblue;
+}
