@@ -29,7 +29,7 @@ body {
 header, footer{
     display: block;
     /* max-width: 1000px; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
     text-align: center;
     /* color: var(--nav-link-color); */
     font-size: 1.2rem;
