@@ -17,6 +17,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--paragraph-font);
+    color: var(--nav-link-color);
 }
 
 body {
@@ -30,7 +31,7 @@ header, footer{
     /* max-width: 1000px; */
     margin: 0 auto;
     text-align: center;
-    color: var(--nav-link-color);
+    /* color: var(--nav-link-color); */
     font-size: 1.2rem;
     background-color: var(--nav-hover-background-color);
 } 
@@ -44,7 +45,7 @@ nav {
 }
 
 nav a {
-    color: var(--nav-link-color);
+    /* color: var(--nav-link-color); */
     background-color: var(--nav-background-color);
     text-shadow: 5px 5px 8px black;
     text-align: center;
@@ -53,7 +54,7 @@ nav a {
     display: block;
     padding: 5px;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 20px;
     box-shadow: 5px 5px 5px 3px black;
     border: 5px solid;
     border-color:  #034275 #022F54 #1982D8 #0867B5;
@@ -78,7 +79,7 @@ main {
 
 h2 {
     display: block;
-    color:var(--nav-link-color);
+    /* color:var(--nav-link-color); */
     background-color: var(--accent2-color);
     text-align: center;
 }
@@ -128,10 +129,6 @@ section {
     float: left;
 }
 
-
-section a {
-    color: var(--nav-link-color);
-}
 section a:hover {
     color: var(--nav-background-color)
 }
@@ -139,7 +136,7 @@ section a:hover {
 
 p, h3 { 
     padding: 20px 40px 10px 20px; 
-    color: var(--nav-link-color);
+    /* color: var(--nav-link-color); */
 }
 
 h3 {
