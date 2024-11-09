@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Rock+Salt&family=RocknRoll+One&display=swap');
+
 :root{
     --primary-color: steelblue;
     --secondary-color: 	#86d6fe;
@@ -7,12 +9,15 @@
     --nav-link-color: white;
     --nav-hover-link-color: #ADF7FF;
     --nav-hover-background-color:   #01557e;
+    
+    --paragraph-font: 'Instrument Serif', serif, trebuchet;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--paragraph-font);
 }
 
 body {
@@ -69,6 +74,7 @@ main {
     padding: 30px;
     /* grid-column: 2/3; */
     margin: 1rem;
+    font-size: 20px;
     
 }
 
@@ -84,6 +90,17 @@ img {
     height:auto;
 }
 
+section {
+    display: grid;
+    grid-template-columns: 4;
+    max-width: 700px;
+}
+div {
+    padding: 30px;
+}
+.about {
+    min-height: 400px;
+}
 .about img {
     margin-top: 27px;
     margin-left: 25px;
@@ -99,7 +116,20 @@ img {
 .where {
     margin-top: 5px;
     border: 1px solid steelblue;
+    
 
+}
+
+.where img {
+     margin-top: 27px;
+    margin-left: 25px;
+    margin-right: 35px;
+    width: 180px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: left;
 }
 
 

@@ -53,8 +53,9 @@
         </main>
 
         <footer>
-            <p>©<span id="currentyear"></span> | Audrey Romrell | Montana, USA</p>
-            <p id="lastModified">Last modified: currentyear</p>
+            <p>©<span id="currentyear">2024</span> | Audrey Romrell | Montana, USA</p>
+            <p id="lastModified"></p>
+            <script>document.getelementById("lastModified").textContent = "Last updated on: " +document.lastModified;</script>
         </footer>
     </body>
 </html>
