@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
 
 
 :root{
@@ -11,14 +11,14 @@
     --nav-hover-link-color: #ADF7FF;
     --nav-hover-background-color:   #01557e;
     
-    /* --paragraph-font: 'Instrument Serif', serif, trebuchet; */
+    --paragraph-font: 'Instrument Serif', serif, trebuchet;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: var(--paragraph-font); */
+    font-family: var(--paragraph-font);
 }
 
 body {
