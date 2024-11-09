@@ -10,7 +10,6 @@
     --nav-hover-background-color:   #01557e;
     
     --paragraph-font: 'Instrument Serif', serif, trebuchet;
-    --paragraph-font-two: "Roboto Slab", serif, trebuchet;
 }
 
 * {
@@ -82,7 +81,6 @@ h2 {
     color:var(--nav-link-color);
     background-color: var(--accent2-color);
     text-align: center;
-    font-family: var(--paragraph-font-two);
 }
 
 img {
