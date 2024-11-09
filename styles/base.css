@@ -17,7 +17,7 @@
 
 body {
     background-color: var(--accent1-color);
-    
+    text-align: center;
 }
 
 header, footer{
@@ -64,9 +64,10 @@ nav a:hover {
 
 main {
     display: grid;
+    grid-template-columns: 2;
     text-align: center;
     padding: 30px;
-    grid-column: 2/3;
+    /* grid-column: 2/3; */
     margin: 1rem;
     
 }
@@ -75,20 +76,33 @@ h2 {
     display: block;
     color:var(--nav-link-color);
     background-color: var(--accent2-color);
-    
-    max-width: 1000px;
-
+    /* max-width: 1000px; */
 }
 
 img {
-    display: flex;
+    display: grid;
     max-width: 270px;
     height:auto;
 }
 
-.aside img {
-    text-align: right;
+.about img {
+    margin-top: 27px;
+    margin-left: 25px;
+    margin-right: 35px;
+    width: 180px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: right;
 }
+
+.where {
+    margin-top: 5px;
+    border: 1px solid steelblue;
+
+}
+
 
 section a {
     color: var(--nav-link-color);
