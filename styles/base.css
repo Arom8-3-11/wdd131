@@ -64,7 +64,7 @@ nav a:hover {
 
 main {
     display: grid;
-    grid-template-columns: 2;
+    /* grid-template-columns: 2; */
     text-align: center;
     padding: 30px;
     /* grid-column: 2/3; */
@@ -76,7 +76,6 @@ h2 {
     display: block;
     color:var(--nav-link-color);
     background-color: var(--accent2-color);
-    /* max-width: 1000px; */
 }
 
 img {
