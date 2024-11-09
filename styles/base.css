@@ -2,7 +2,7 @@
 
 
 :root{
-    --primary-color: steelblue;
+    --primary-color: #012e45;
     --secondary-color: 	#86d6fe;
     --accent1-color: black;
     --accent2-color: #545454;
@@ -24,7 +24,7 @@
 body {
     /* margin: 0 30px 0 20px; */
     background-color: var(--accent1-color);
-    text-align: center;
+    /* text-align: center; */
 }
 
 header, footer{
@@ -70,38 +70,37 @@ nav a:hover {
 }
 
 main {
-    display: grid;
-    /* grid-template-columns: 2; */
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
     padding: 30px;
-    /* grid-column: 2/3; */
     margin: 1rem;
     font-size: 20px;
-    
+    justify-content: space-evenly;
 }
 
 h2 {
     display: block;
     color:var(--nav-link-color);
     background-color: var(--accent2-color);
+    text-align: center;
 }
 
 img {
-    display: grid;
+    /* display: grid; */
     max-width: 270px;
     height:auto;
 }
 
 section {
     display: grid;
-    /* grid-template-columns: 4; */
+    margin: 5px;
     max-width: 700px;
-}
-div {
     padding: 30px;
+    background-color: var(--primary-color);
 }
+
 .about {
-    min-height: 400px;
+    padding: 30px;
 }
 .about img {
     margin-top: 27px;
@@ -111,21 +110,22 @@ div {
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    /* box-shadow: 0 0 30px gray; */
     float: right;
 }
 
 .where {
     margin-top: 5px;
-    border: 1px solid steelblue;
+    border-top: 1px solid steelblue;
     
 
 }
 
 .where img {
-     margin-top: 27px;
+     /* margin-top: 27px;
     margin-left: 25px;
-    margin-right: 35px;
+    margin-right: 35px; */
+    margin: 30px 25px 40px 25px;
     width: 180px;
     height: auto;
     border: 1px solid steelblue;
@@ -146,6 +146,10 @@ section a:hover {
 p, h3 { 
     padding: 20px 40px 10px 20px; 
     color: var(--nav-link-color);
+}
+
+h3 {
+    text-align: center;
 }
 
 footer {
