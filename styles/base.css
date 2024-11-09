@@ -108,7 +108,6 @@ section {
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
-    /* box-shadow: 0 0 30px gray; */
     float: right;
 }
 
@@ -120,9 +119,6 @@ section {
 }
 
 .where img {
-     /* margin-top: 27px;
-    margin-left: 25px;
-    margin-right: 35px; */
     margin: 30px 25px 40px 25px;
     width: 180px;
     height: auto;
@@ -148,8 +144,4 @@ p, h3 {
 
 h3 {
     text-align: center;
-}
-
-footer {
-    border-top: 1px solid #000;
 }
