@@ -6,7 +6,7 @@
     --nav-background-color: #216298;
     --nav-link-color: white;
     --nav-hover-link-color: #ADF7FF;
-    --nav-hover-background-color: #064980;
+    --nav-hover-background-color:   #01557e;
 }
 
 * {
@@ -31,7 +31,7 @@ header, footer{
 } 
 
 nav {
-    background-color: var(--secondary-color);
+    background-color: var(--nav-hover-background-color);
     padding: 1rem;
     display: flex;
     justify-content: space-evenly;
@@ -80,8 +80,28 @@ h2 {
 
 }
 
+img {
+    display: flex;
+    max-width: 270px;
+    height:auto;
+}
 
-p { padding: 20px 40px 10px 20px; }
+.aside img {
+    text-align: right;
+}
+
+section a {
+    color: var(--nav-link-color);
+}
+section a:hover {
+    color: var(--nav-background-color)
+}
+
+
+p, h3 { 
+    padding: 20px 40px 10px 20px; 
+    color: var(--nav-link-color);
+}
 
 footer {
     border-top: 1px solid #000;
