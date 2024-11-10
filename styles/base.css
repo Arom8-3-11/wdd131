@@ -133,7 +133,6 @@ section a:hover {
     color: var(--nav-background-color)
 }
 
-
 p, h3 { 
     padding: 20px 40px 10px 20px; 
     /* color: var(--nav-link-color); */
@@ -141,4 +140,9 @@ p, h3 {
 
 h3 {
     text-align: center;
+}
+
+
+footer p{
+    font-size: 1.2rem;
 }
