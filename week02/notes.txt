@@ -1,0 +1,69 @@
+JavaScript: Fundamental Programming Constructs:
+
+Conditional Satements:
+    IF statement: Executesa block of code if a specified condition is true.
+    Example:
+        if (condition) {
+            //code to execute if the condition is true
+        }
+    condition is evaluated to boolean value, i.e., true/false.. writing condition statements is critical skill in programming. 
+    The use of operators and expressions is a key concept in writing condition statements that solve programming problems.
+
+    ELSE statement: Provides an alternative block of code to execute if the condition in the if statement is false.
+    Example:
+        if (condition) {
+            // executes if condition is true
+        }
+
+        else {
+            // executes if condition is false
+        }
+
+    ELSE If statement: this structure allows for the checking of multiple conditions in sequence.
+    Example: 
+        if (condition1) {
+            //executes if condition1 is true
+        }
+
+        else if (condition2) {
+            //executes if condition2 is true
+        }
+
+        else {
+            //executes if none of the conditions are true
+        }
+
+Switch Statements: Provides a way to execute selective blocks of code based on the value of an expression.
+    Example:
+        switch (expression) {
+            case value1:
+                //executes if expression = value1
+                break;
+            case value2:
+                //executes if expression = value2
+                break;
+            // ... more cases ...
+            default:
+                //executes if none of the cases match
+        }
+
+Looping Statements:
+    FOR Loop: repeats a block of code a specified number of times.
+    Example: 
+        for (let i = 0; i < 19; i++) {
+            //executes in each iteration
+        }
+
+    WHILE Loop: repeats a block of code as long as a specified condition is true.
+    Example:
+        while (condition) {
+            //executes while the condition is true
+        }
+
+    forEach Loop: this loop structure is for arrays. It iterates over each element of the array.
+    Example:
+        array.forEach(fucntion(element) {
+            //executes for each element
+        })
+
+        
