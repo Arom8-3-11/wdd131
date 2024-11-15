@@ -1,4 +1,4 @@
-input, button, list {
+input, button, list;{
     const input = document.querySelector('#favchap');
     const button = document.querySelector('button');
     const list = document.querySelector('newlist');
