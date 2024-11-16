@@ -70,38 +70,7 @@
     .navigation a {
         text-align: center;
     }
-    /* nav { */
-        /* display: flex; */
-        /* flex-wrap: wrap; */
-        /* justify-content: space-evenly; */
-        /* align-items: right; */
-        /* padding: 1rem; */
-    /* } */
-    /* nav a { */
-        /* : right; */
-        /* flex: 1 1 100%; */
-        /* margin: 10px; */
-        /* color: var(--nav-color); */
-        /* background-color: var(--nav-background-color); */
-        /* text-shadow: 5px 5px 8px black; */
-        /* text-align: center; */
-        /* width: 14%; */
-        /* max-width: 160px; */
-        /* display: block; */
-        /* padding: 5px; */
-        /* text-decoration: none;
-        font-size: 20px; */
-        /* box-shadow: 5px 5px 5px 3px black; */
-        /* border: 5px solid; */
-        /* border-color:  #034275 #022F54 #1982D8 #0867B5; */
-    /* } */
-    /* nav a:hover { */
-        /* color: var(--nav-hover-color); */
-        /* background-color: var(--accent1-color); */
-        /* text-decoration: none; */
-        /* border-color: #0867B5 #034275 #022F54 #1982D8;
-        box-shadow: none; */
-    /* } */
+
 
     h2{
         font-size: 2rem;
@@ -113,7 +82,7 @@
     div {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(auto-fit, minmax(3, 1fr));
+        grid-template-rows: repeat(0, minmax(3, 1fr));
     }
     figure {
         max-width: fit-content;
