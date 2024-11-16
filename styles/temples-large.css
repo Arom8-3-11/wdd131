@@ -67,37 +67,7 @@ h1 {
 
 
 
-/* nav {
-    display: flex;
-    overflow: hidden;
-    flex-wrap: wrap; */
-/* } */
-/* nav a { */
-    /* flex: 1 1 100%; */
-    /* margin: 10px; */
-    /* color: var(--nav-color); */
-    /* background-color: var(--nav-background-color); */
-    /* text-shadow: 5px 5px 8px black; */
-    /* text-align: center; */
-    /* display: block; */
-    /* padding: 5px;
-    text-decoration: none;
-    font-size: 20px; */
-    /* box-shadow: 5px 5px 5px 3px black; */
-    /* border: 5px solid; */
-    /* border-color:  #034275 #022F54 #1982D8 #0867B5; */
-/* } */
 
-/* .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: var(--nav-color); */
-
-/* } */
 h2 {
     font-size: 2rem;
     text-align: center;
@@ -120,7 +90,6 @@ figure {
 img {
     display: grid;
     height: 200px;
-    max-width: auto;
     justify-content:space-evenly;
 
 }
