@@ -64,19 +64,12 @@ nav a:hover {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 div {
     justify-content: center;
     align-items: center;
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); */
 }
 figure {
     display: block;
@@ -92,5 +85,12 @@ img {
     justify-content:space-evenly;
 }
 figcaption {
+    text-align: center;
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    padding: 1rem;
     text-align: center;
 }
