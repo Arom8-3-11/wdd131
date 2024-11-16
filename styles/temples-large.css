@@ -1,1 +1,63 @@
 /* this will be for the larger view */
+body {
+    margin: auto;
+    background-color: var(--secondary-color);
+}
+
+header {
+    background-color: var(--primary-color);
+}
+h1 {
+    font-size: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* figure {
+    display: grid;
+    gap: 25px; /* Space between grid items */
+    /* place-items: center;
+    max-width: fit-content;
+    border: solid 5px var(--nav-color);
+    background-color: var(--nav-color); */
+/* } */
+div {
+    justify-content: center;
+    align-items: center;
+}
+figure {
+    display: block;;
+    max-width: fit-content;
+    border: solid 5px var(--nav-color);
+    background-color: var(--nav-color);
+    margin: 10px auto;
+}
+img {
+    display: grid;
+    max-height: 200px;
+    max-width: 100%;
+    justify-content:space-evenly;
+}
+figcaption {
+    text-align: center;
+}
