@@ -82,7 +82,7 @@
     div {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(0, minmax(3, 1fr));
+        grid-template-rows: repeat(2, 1fr);
     }
     figure {
         max-width: fit-content;
