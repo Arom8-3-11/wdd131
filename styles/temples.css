@@ -12,123 +12,111 @@
     --paragraph-font: 'Instrument Serif', serif, trebuchet;
 }
 
-@media screen and (min-width: 600px) {
-    
-    * {
-        margin: 0 auto;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: bold var(--paragraph-font);
-    }
-    body {
-        margin: auto;
-        background-color: var(--secondary-color);
-    }
-    /* #menu {
-        display: block;
-        font-size: 2rem;
-        font-weight: 700;
-        text-decoration: none;
-        padding:  .5rem .75rem;
-        background-color: #eee;
-        color: #000;
-    }
-
-    #menu::before {
-        content: "☰";
-    } */
-
-
-
-
-    header {
-        background-color: var(--primary-color);
-        display: flex;
-        flex-direction: row;
-        min-height:  70px;
-        justify-content: space-around;
-        align-items: center;
-        padding: 0 24px;
-
-    }
-    h1 {
-        font-size: 3rem;
-        justify-content: left;
-    }
-
-    
-    #menu {
-        display: none;
-    }
-    .navigation {
-        display: flex;
-    }
-    .navigation li {
-        display: block;
-        flex: 1 1 100%;
-    }
-    .navigation a {
-        text-align: center;
-    }
-
-
-    h2{
-        font-size: 2rem;
-        text-align: center;
-        padding: 1rem;
-        color: var(--primary-color);
-    }
-
-    div {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-    figure {
-        max-width: fit-content;
-        border: solid 5px var(--nav-color);
-        background-color: var(--nav-color);
-    }
-    img {
-        display: grid;
-        height: 120px;
-    }
-    figcaption {
-        text-align: center;
-    }
-    
-    footer {
-        background-color: var(--primary-color);
-        padding: 1rem;
-        text-align: center;
-        font-size: 1.2rem;
-    }
-
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: bold var(--paragraph-font);
+}
+body {
+    background-color: var(--secondary-color);
 }
 
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    min-height:  70px;
+    align-items: center;
 
-@media screen and (min-width: 900px) {
-    div {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
-    #menu {
-        display: none;
-    }
-    .navigation {
-        display: flex;
-    }
-    .navigation li {
-        display: block;
-        flex: 1 1 100%;
-    }
-    .navigation a {
-        text-align: center;
-    }
     
+}
+h1 {
+    font-size: 2.5rem;
 }
 
 
 
+#menu {
+    display: block;
+    padding-left: 120px;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: #000;
+    border: none;
+}
+#menu::before {
+    content: "☰";
+}
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+.navigation li {
+    display: none;
+}
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    transition:  0.5s;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+.navigation a:hover, .navigation a:active{
+    background-color: var(--accent1-color);
+    color: var(--nav-hover-color);
+}
+.show li {
+    display: block;
+}
+#menu.show::before {
+    content: "❎";
+} 
+
+
+
+
+
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px;
+    color: var(--primary-color);
+
+}
+div {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+figure {
+    display: block;
+    max-width: fit-content;
+    border: solid 5px var(--nav-color);
+    background-color: var(--nav-color);
+    margin: 20px auto;
+}
+img {
+    display: grid;
+    height: 200px;
+    justify-content:space-evenly;
+
+}
+figcaption {
+    text-align: center;
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
 

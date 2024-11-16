@@ -1,106 +1,38 @@
 /* this will be for the larger view */
-* {
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: bold var(--paragraph-font);
-}
-body {
-    background-color: var(--secondary-color);
+@media screen and (min-width: 600px) {
+
+    #menu, #menu::before {
+        display: none;
+        
+    }
+    .navigation {
+        display: flex;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+    .navigation a {
+        text-align: center;
+    }
+
+    div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
 }
 
-header {
-    /* background-color: var(--primary-color); */
-    background-color: var(--nav-color);
-    
-}
-h1 {
-    font-size: 2.5rem;
-}
 
-
-
-#menu {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    text-decoration: none;
-    padding:  .5rem .75rem;
-    background-color: var(--primary-color);
-    color: #000;
-    border: none;
-    /* justify-content: right; */
+@media screen and (min-width: 1100px) {
+    div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
 }
-#menu::before {
-    content: "☰";
-}
-.navigation {
-    list-style: none;
-    margin: 0 auto;
-    max-width: 760px;
-}
-.navigation li {
-    display: none;
-}
-.navigation a {
-    display: block;
-    padding: 0.75rem;
-    text-align: center;
-    text-decoration: none;
-    color: #000;
-    font-weight: 700;
-    transition:  0.5s;
-    font-size: clamp(1rem, 2vw, 1.5rem);
-}
-.navigation a:hover, .navigation a:active{
-    background-color: var(--accent1-color);
-    color: var(--nav-hover-color);
-}
-.show li {
-    display: block;
-}
-#menu.show::before {
-    content: "❎";
-} 
 
 
 
 
-
-
-h2 {
-    font-size: 2rem;
-    text-align: center;
-    margin: 20px;
-    color: var(--primary-color);
-
-}
-div {
-    justify-content: center;
-    align-items: center;
-    display: grid;
-}
-figure {
-    display: block;
-    max-width: fit-content;
-    border: solid 5px var(--nav-color);
-    background-color: var(--nav-color);
-    margin: 20px auto;
-}
-img {
-    display: grid;
-    height: 200px;
-    justify-content:space-evenly;
-
-}
-figcaption {
-    text-align: center;
-}
-
-
-footer {
-    background-color: var(--primary-color);
-    padding: 1rem;
-    text-align: center;
-    font-size: 1.2rem;
-}
