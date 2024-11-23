@@ -34,6 +34,7 @@ main {
 
 div {
     background-color: var(--primary);
+    
 }
 h2 {
     text-align: center;
@@ -53,7 +54,12 @@ footer {
     
 }
 
-/* @media screen and (min-width: 560px) {
-
+@media screen and (min-width: 560px) {
+    .data, .weather{
+        position: relative;
+        /* flex-wrap: wrap; */
+        /* justify-content: space-around; */
+    }
     
-} */
+    
+}
