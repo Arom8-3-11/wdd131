@@ -1,0 +1,49 @@
+:root {
+    --primary: #d5cbc3;
+    --secondary: #2f2920;
+    --tertiary: #508538;
+
+    --font: 'DM Serif Display', sans-serif, trebuchet;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+h1, footer{
+    text-align: center;
+}
+
+header {
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding: 1rem;
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+
+main {
+    background-color: var(--tertiary);
+    color: white;
+    
+    padding: 1rem;
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+img {
+    width: 100%;
+    height: auto;
+}
+footer {
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding: 1rem;
+    font-size: clamp(1rem, 2vw, 2rem);
+    
+}
+
+/* @media screen and (min-width: 560px) {
+
+    
+} */
