@@ -56,18 +56,18 @@ img {
 .data, .weather {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    /* align-items: center; */
+    /* text-align: center; */
 }
 .weather img {
     width: 50%;
-    /* margin-bottom: 1rem; */
 }
 
 li {
     list-style: none;
-
-
+    font-size: 1.3rem;
+    padding: 10px;
+    text-align: center;
 }
 
 footer {
@@ -82,45 +82,17 @@ footer {
     .hero {
         position: relative;
     }
-    /* .data, .weather{
-        position: absolute;
-    }
-    .data {
-        /* width: clamp(320px, 50%, 400px); */
-        /* top: clamp(18%, 25%, 40%);
-        right: 70%;
-        transform: translate(-50%, -50%);
-    }
-    .weather {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        max-width: 500px;
-        align-items: center;
-        justify-content: center;
-        text-align: left;
-        bottom: clamp(20px, 5%, 10%);
-        right: 70px; */
-    /* } */
-
-    /* .data, .weather {
-        position: absolute;
-        top: clamp(18%, 30%, 40%);
-        left: clamp(20%, 15%, 30%);
-        transform: translate(-50%, -50%);
-        width: auto;
-        background-color: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background */
-        /* padding: 2rem;
-    } */ 
-    .data, .weather {
-        /* background-color: rgba(7, 0, 0, 0.5); */
-    }
     h2 {
         text-align: left;
-        background-color: var(--tertiary);
+        background-color: var(--secondary);
+        padding-left: 20px;
+        color: var(--primary);
+        /* overflow-x: auto; */
     }
-    li{
+    /* li{
         font-size: 1.3rem;
-    }
+        padding: 10px;
+    } */
     .data {
         flex-direction: column;
         max-width: 300px;
@@ -131,23 +103,30 @@ footer {
     }
     .weather {
         position: absolute;
-        bottom: 200px;
+        bottom: 140px;
+        /* bottom: clamp(423px, -55vw, 50px); */
         right: 20px;
         max-width: 300px;
     }
-    .weather img {
-        width: 25%;
+    .weather h2::after {
+            content: "⛅";
+            text-align: right;
+            font-size: 01.8rem;
+            padding-right: 10px;
+            justify-content: space-evenly;
     }
-    /* .weather h2::after {
-        content: url('images/weather-icon.svg');
-        display: inline-block;
-        margin-left: 10px;
-        vertical-align: middle;
-    } */
+    .weather img {
+        display: none;
+    }
+
     .weather p {
         column-span: 2;
     }
-
-    
-    
 }
+
+/* @media screen and (min-width: 1124px) {
+    .weather {
+        bottom: 50px;
+    }
+    
+} */
