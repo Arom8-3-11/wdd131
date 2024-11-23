@@ -89,10 +89,7 @@ footer {
         color: var(--primary);
         /* overflow-x: auto; */
     }
-    /* li{
-        font-size: 1.3rem;
-        padding: 10px;
-    } */
+
     .data {
         flex-direction: column;
         max-width: 300px;
@@ -118,15 +115,5 @@ footer {
     .weather img {
         display: none;
     }
-
-    .weather p {
-        column-span: 2;
-    }
 }
 
-/* @media screen and (min-width: 1124px) {
-    .weather {
-        bottom: 50px;
-    }
-    
-} */
