@@ -20,21 +20,67 @@
 
     <main>
         <picture>
-            <source srcset="images/large-min.webp" media="(min-width: 769px)">
+            <source class="hero" srcset="images/large-min.webp" media="(min-width: 769px)">
             <img class="hero" src="images/small-min.webp" alt="Photo of a Grizzly bear" loading="lazy" width="100">
         </picture>
 
         <section class="data">
             <h2>Data</h2>
-            <p>Area: 147,040 mi&sup2;</p>
-            <p>Area: 147,0 mi&sup2;</p>
+            <ul class="list">
+                <li>
+                    <span>Area:</span>
+                    147,040 sq mi
+                </li>
+                <li>
+                    <span>Population</span>
+                    1,068,778
+                </li>
+                <li>
+                    <span>Capital:</span>
+                    Helena
+                </li>
+                <li>
+                    <span>Langquages:</span>
+                    English
+                </li>
+                <li>
+                    <span>Currency:</span>
+                    US Dollar
+                </li>
+                <li>
+                    <span>Time Zone:</span>
+                    Mountain Time
+                </li>
+                <li>
+                    <span>Calling Code:</span>
+                    +1 406
+                </li>
+                <li>
+                    <span>Internet TLD:</span>
+                    .com
+                </li>
+            </ul>
         </section>
         <section class="weather">
             <h2>Weather</h2>
             <img src="images/weather-icon.svg" alt="Weather icon">
-            <li>
-                <span id="windChill"></span>
-            </li>
+            <ul class="wlist">
+                <li>
+                    <span>Temperature:</span>
+                    30°F
+                </li>
+                <li>
+                    <span>Condition:</span>
+                    Partly Cloudy
+                </li>
+                <li>
+                    <span>Wind:</span>
+                    10 mph
+                </li>
+                <li>
+                    <span id="windChill"></span>
+                </li>
+            </ul>
         </section>
     </main>
 

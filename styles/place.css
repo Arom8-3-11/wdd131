@@ -1,16 +1,20 @@
 :root {
-    --primary: #d5cbc3;
-    --secondary: #2f2920;
-    --tertiary: #508538;
+    --primary: silver;
+    --secondary: #181835;
+    --tertiary: rgb(191, 174, 77);
 
     --font: 'DM Serif Display', sans-serif, trebuchet;
 }
 
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font);
+
+}
+body {
+    background-color: var(--secondary);
 }
 
 h1, footer{
@@ -49,7 +53,7 @@ img {
     height: auto;
 }
 
-.weather {
+.data, .weather {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,6 +67,7 @@ img {
 li {
     list-style: none;
 
+
 }
 
 footer {
@@ -73,27 +78,76 @@ footer {
     
 }
 
-@media screen and (min-width: 560px) {
-
-    .data, .weather{
+@media screen and (min-width: 769px) {
+    .hero {
         position: relative;
-        /* flex-wrap: wrap; */
-        /* justify-content: space-around; */
+    }
+    /* .data, .weather{
+        position: absolute;
+    }
+    .data {
+        /* width: clamp(320px, 50%, 400px); */
+        /* top: clamp(18%, 25%, 40%);
+        right: 70%;
+        transform: translate(-50%, -50%);
     }
     .weather {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /* flex-direction: row; */
+        max-width: 500px;
         align-items: center;
         justify-content: center;
         text-align: left;
+        bottom: clamp(20px, 5%, 10%);
+        right: 70px; */
+    /* } */
+
+    /* .data, .weather {
+        position: absolute;
+        top: clamp(18%, 30%, 40%);
+        left: clamp(20%, 15%, 30%);
+        transform: translate(-50%, -50%);
+        width: auto;
+        background-color: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background */
+        /* padding: 2rem;
+    } */ 
+    .data, .weather {
+        /* background-color: rgba(7, 0, 0, 0.5); */
+    }
+    h2 {
+        text-align: left;
+        background-color: var(--tertiary);
+    }
+    li{
+        font-size: 1.3rem;
+    }
+    .data {
+        flex-direction: column;
+        max-width: 300px;
+        position: absolute;
+        top: 200px;
+        left: 20px;
+
+    }
+    .weather {
+        position: absolute;
+        bottom: 200px;
+        right: 20px;
+        max-width: 300px;
     }
     .weather img {
-        width: 13%;
+        width: 25%;
     }
+    /* .weather h2::after {
+        content: url('images/weather-icon.svg');
+        display: inline-block;
+        margin-left: 10px;
+        vertical-align: middle;
+    } */
     .weather p {
-        flex-direction: column;
+        column-span: 2;
     }
+
     
     
 }
