@@ -79,7 +79,10 @@ footer {
 }
 
 @media screen and (min-width: 769px) {
-    .hero {
+    /* .hero {
+        position: relative;
+    } */
+    main {
         position: relative;
     }
     h2 {
@@ -88,21 +91,27 @@ footer {
         padding-left: 20px;
         color: white;
         /* overflow-x: auto; */
+        /* line-height: clamp(1rem, 5vw, 3rem); */
     }
+    li {
+        /* padding: clamp(5px, 3vw, 10px); */
+        padding: 5px 10px;
 
+    }
     .data {
         flex-direction: column;
         max-width: 300px;
         position: absolute;
-        top: 200px;
-        left: 20px;
-
+        top: 10px;
+        left: 30px;
+        /* top:10%;
+        left:5%; */
     }
     .weather {
         position: absolute;
-        bottom: 140px;
+        bottom: 20px;
         /* bottom: clamp(423px, -55vw, 50px); */
-        right: 20px;
+        right: 30px;
         max-width: 300px;
     }
     .weather h2::after {
