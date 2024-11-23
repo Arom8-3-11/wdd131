@@ -86,7 +86,7 @@ footer {
         text-align: left;
         background-color: var(--secondary);
         padding-left: 20px;
-        color: var(--primary);
+        color: white;
         /* overflow-x: auto; */
     }
 
