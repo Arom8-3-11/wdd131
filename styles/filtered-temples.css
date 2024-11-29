@@ -1,0 +1,123 @@
+/* this will be for mobile view */
+
+:root {
+    --primary-color: #9ACEF5;
+    --secondary-color: #433E38;
+    --accent1-color: #000004;
+    --accent2-color: #ECEFDC;
+    --nav-color: white;
+    --nav-background-color: #216298;
+    --nav-hover-color: #ADF7FF;
+    --nav-hover-background-color: #01557e;
+    --paragraph-font: 'Instrument Serif', serif, trebuchet;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: bold var(--paragraph-font);
+}
+body {
+    background-color: var(--secondary-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    min-height:  70px;
+    align-items: center;
+
+    
+}
+h1 {
+    font-size: 2.5rem;
+    padding-left: 30px;
+}
+
+
+
+#menu {
+    display: block;
+    padding-left: 120px;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: #000;
+    border: none;
+}
+#menu::before {
+    content: "☰";
+}
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+.navigation li {
+    display: none;
+}
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    transition:  0.5s;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+.navigation a:hover, .navigation a:active{
+    background-color: var(--accent1-color);
+    color: var(--nav-hover-color);
+}
+.show li {
+    display: block;
+}
+#menu.show::before {
+    content: "❎";
+} 
+
+
+
+
+
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px;
+    color: var(--primary-color);
+
+}
+div {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+figure {
+    display: block;
+    max-width: fit-content;
+    border: solid 5px var(--nav-color);
+    background-color: var(--nav-color);
+    margin: 20px auto;
+}
+img {
+    display: grid;
+    height: 200px;
+    justify-content:space-evenly;
+
+}
+figcaption {
+    text-align: center;
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
