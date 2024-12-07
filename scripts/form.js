@@ -14,19 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
   let lastModified = document.lastModified;
   document.getElementById("lastModified").textContent = `Last Modified: ${lastModified}`;
 
-  let reviewCount = localStorage.getItem('reviewCount') || 0;
 
-  // Display the review count
-  const reviewCountElement = document.getElementById('reviewCount');
-  reviewCountElement.textContent = `You have submitted ${reviewCount} reviews.`;
-
-  // Show the review count message briefly
-  reviewCountElement.style.display = 'block';
-  setTimeout(() => {
-      reviewCountElement.style.display = 'none';
-  }, 5000); // Hide the message after 5 seconds
-
-  // Handle form submission
   const form = document.querySelector('form');
   form.addEventListener('submit', function(event) {
       // Increment the review counter in localStorage
@@ -34,6 +22,29 @@ document.addEventListener("DOMContentLoaded", function() {
       reviewCount++;
       localStorage.setItem('reviewCount', reviewCount);
   });
+
+
+
+  let reviewCount = localStorage.getItem('reviewCount') || 0;
+
+  // Display the review count
+  const reviewCountElement = document.getElementById('reviewCount');
+  reviewCountElement.textContent = `You have submitted ${reviewCount} reviews.`;
+
+  // // Show the review count message briefly
+  // reviewCountElement.style.display = 'block';
+  // setTimeout(() => {
+  //     reviewCountElement.style.display = 'none';
+  // }, 5000); // Hide the message after 5 seconds
+
+  // Handle form submission
+  // const form = document.querySelector('form');
+  // form.addEventListener('submit', function(event) {
+  //     // Increment the review counter in localStorage
+  //     let reviewCount = localStorage.getItem('reviewCount') || 0;
+  //     reviewCount++;
+  //     localStorage.setItem('reviewCount', reviewCount);
+  // });
 });
 const products = [
     {
