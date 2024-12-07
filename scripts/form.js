@@ -32,11 +32,17 @@ const products = [
       averagerating: 5.0
     }
   ];
-  
-const form = document.querySelector('form');
-form.addEventListener('submit', function(event) {
-    // Increment the review counter in localStorage
-    let reviewCount = localStorage.getItem('reviewCount') || 0;
-    reviewCount++;
-    localStorage.setItem('reviewCount', reviewCount);
+document.addEventListener("DOMContentLoaded", function() {
+  // Get the review count from localStorage
+  let reviewCount = localStorage.getItem('reviewCount') || 0;
+
+  // Display the review count
+  document.getElementById('reviewCount').textContent = `You have submitted ${reviewCount} reviews.`;
+  const form = document.querySelector('form');
+  form.addEventListener('submit', function(event) {
+      // Increment the review counter in localStorage
+      let reviewCount = localStorage.getItem('reviewCount') || 0;
+      reviewCount++;
+      localStorage.setItem('reviewCount', reviewCount);
+    });
 });
