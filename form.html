@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Audrey Romrell">
+    <meta name="description" content="product review form">
+    <title>WDD 131 - Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+   
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <div class="container">
+            <form method="get" action="review.html">
+                <div class="form-group">
+                    <label style="color:white" for="product-name">Product Name</label>
+                    <select id="product-name" name="product-name" required="">
+                        <option value="" disabled="" selected="">Select a Product ...</option>
+                        <option value="fc-1888">Nissan Rogue SV</option><option value="fc-2050">Dodge Challenger SXT Coupe</option><option value="fs-1987">Ford Edge SE SUV</option><option value="ac-2000">GMC Yukon Denali SUV</option><option value="jj-1969">Subaru Outback Limited Wagon</option></select>
+                </div>
+    
+                <div class="form-group">
+                    <label style="color:white">Overall Rating</label>
+                    <div class="rating">
+                        <div class="star">
+                            <label for="star1" title="1 star">★</label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                        </div>
+
+                        <div class="star">
+                            <label for="star2" title="2 stars">★★</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                        </div>
+
+                        <div class="star">
+                            <label for="star3" title="3 stars">★★★</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                        </div>
+
+                        <div class="star">
+                            <label for="star4" title="4 stars">★★★★</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                        </div>
+
+                        <div class="star">
+                        <!-- star then "radio symbol", if you want the "radio" before the label, just have it before the lable in the html -->
+                            <label for="star5" title="5 stars">★★★★★</label>
+                        <input type="radio" id="star5" name="rating" value="5">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <label style="color:white" for="installation-date">First Used</label>
+                    <input type="date" id="installation-date" name="installation-date" required="">
+                </div>
+    
+                <fieldset class="form-group">
+                    <legend>Which features did you find useful in the product? (Check all that apply)</legend>
+                    <label style="color:white"><input type="checkbox" name="features" value="durability"> Durability</label><br>
+                    <label style="color:white"><input type="checkbox" name="features" value="ease-of-use"> Ease of Use</label><br>
+                    <label style="color:white"><input type="checkbox" name="features" value="performance"> Performance</label><br>
+                    <label style="color:white"><input type="checkbox" name="features" value="design"> Design</label>
+                </fieldset>
+    
+                <div class="form-group">
+                    <label style="color:white" for="written-review">Written Review (Optional)</label>
+                    <textarea id="written-review" name="written-review" rows="5" cols="30"></textarea>
+                </div>
+    
+                <div class="form-group">
+                    <label style="color:white" for="your-name">Your Name (Optional)</label>
+                    <input type="text" id="your-name" name="your-name" pattern="[a-zA-Z ]+">
+                </div>
+    
+                <input type="submit" value="Post">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentYear"></span> | Audrey Romrell | Montana, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
