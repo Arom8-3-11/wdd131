@@ -33,3 +33,10 @@ const products = [
     }
   ];
   
+const form = document.querySelector('form');
+form.addEventListener('submit', function(event) {
+    // Increment the review counter in localStorage
+    let reviewCount = localStorage.getItem('reviewCount') || 0;
+    reviewCount++;
+    localStorage.setItem('reviewCount', reviewCount);
+});
