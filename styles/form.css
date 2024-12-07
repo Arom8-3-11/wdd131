@@ -42,6 +42,7 @@ form {
     border-radius: 20px;
     background-color: var(--black-variant);
     padding: 25px;
+    color: var(--quaternary-color);
 }
 
 
@@ -91,4 +92,31 @@ legend {
 }
 
 
+.review {
+    color: var(--quaternary-color);
+    text-align: center;
+    /* margin: 20px; */
+    padding: 20px;
+}
 
+.review h1 {
+    font-size: 3rem;
+    margin: 30px;
+}
+
+.review p {
+    font-size: 1.5rem;
+    margin: 20px;
+    padding: 30px;
+}
+
+.review p a {
+    color: var(--quaternary-color);
+    background-color: var(--tertiary-color);
+    margin: 40px;
+}
+
+.review p a:hover {
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+}
