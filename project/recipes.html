@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <meta name="author" content="Audrey Romrell">
+    <meta name="description" content="Page to help find something yummy to eat.">
+    <link rel="stylesheet" href="styles/finalproject.css">
+    <script src="scripts/finalproject.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <!-- <h1>Craving's Magic</h1> -->
+        <img src="images/logo.jpg" alt="Cravings Magic Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Recipes</h1>
+        <div id="simple-recipes" class="simple-recipes">
+            <h2>Simple Recipes</h2>
+            <p>Here are some simple recipes to try out:</p>
+            <ul>
+                <li>
+                    <img src="images/grilled-cheese.jpg" alt="Grilled Cheese">
+                    <a href="https://www.allrecipes.com/recipe/23891/grilled-cheese-sandwich/">Grilled Cheese</a>
+                </li>
+                <li>
+                    <img src="images/spaghetti.jpg" alt="Spaghetti">
+                    <a href="https://www.allrecipes.com/recipe/158140/spaghetti-sauce-with-ground-beef/">Spaghetti</a>
+                </li>
+                <li>
+                    <img src="images/chicken-alfredo.jpg" alt="Chicken Alfredo">
+                    <a href="https://bellyfull.net/chicken-alfredo-recipe/">Chicken Alfredo</a>
+                </li>
+                <li>
+                    <img src="images/fresh-salad.jpg" alt="Fresh Salad">
+                    <a href="https://www.gimmesomeoven.com/everyday-salad-recipe/">Fresh Salad</a>
+                </li>
+                <li>
+                    <img src="images/ritz-casserole.jpg" alt="Ritz Chicken Casserole">
+                    <a href="https://www.thecountrycook.net/ritz-chicken-casserole/">Ritz Cracker Chicken Casserole</a>
+                </li>
+                <li>
+                    <img src="images/goulash.jpg" alt="Goulash">
+                    <a href="https://iwashyoudry.com/easy-goulash-recipe/">Goulash</a>
+                </li>
+                <li>
+                    <img src="images/quesadilla.jpg" alt="Chicken Quesadilla">
+                    <a href="https://www.wellplated.com/chicken-quesadilla/">Chicken Quesadilla</a>
+                </li>
+                <li>
+                    <img src="images/salmon.jpg" alt="Brown Sugar Salmon">
+                    <a href="https://iambaker.net/brown-sugar-glazed-salmon/">Brown Sugar Salmon</a>
+                </li>
+                <li>
+                    <img src="images/stir-fry.jpg" alt="Chicken Stir-Fry">
+                    <a href="https://www.momontimeout.com/easy-chicken-stir-fry-recipe/">Chicken Stir-Fry</a>
+                </li>
+                <li>
+                    <img src="images/taco-bake.jpg" alt="Taco Gnocchi Bake">
+                    <a href="https://www.delish.com/cooking/recipe-ideas/a60306630/taco-gnocchi-bake-recipe/">Taco Gnocchi Bake</a>
+                </li>
+                <li>
+                    <img src="images/chicken-tacos.jpg" alt="Chicken Tacos">
+                    <a href="https://www.thekitchn.com/chicken-tacos-recipe-23629172">Chicken Tacos</a>
+                </li>
+                <li>
+                    <img src="images/taco-spaghetti.jpg" alt="Taco Spaghetti">
+                    <a href="https://princesspinkygirl.com/taco-spaghetti/">Taco Spaghetti</a>
+                </li>
+                <li>
+                    <img src="images/french-bread-pizza.jpg" alt="French Bread Pizza">
+                    <a href="https://www.favfamilyrecipes.com/how-to-make-french-bread-pizza/">French Bread Pizza</a>
+                </li>
+            </ul>
+        </div>
+        <div id="recommended" class="recommended">
+            <h2>Recommended Recipe</h2>
+            <p>Here are the most recommended recipes:</p>
+            <ul>
+                <li>Chicken Alfredo</li>
+                <li>Chicken Tacos</li>
+                <li>Ritz Cracker Chicken Casserole</li>
+            </ul>
+        </div>
+        <div id="add-recipe" class="add-recipe">
+            <h2>Request a Recipe</h2>
+            <p>Do you have a recipe you would like to see on this site? Fill out the form below:</p>
+            <form action="submit.php" method="post">
+                <label for="recipeName">Recipe Name:</label>
+                <input type="text" id="recipeName" name="recipeName" required>
+                <label for="recipeDescription">Recipe Description:</label>
+                <textarea id="recipeDescription" name="recipeDescription" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>©2024<span id="currentYear"></span> | Audrey Romrell | Montana, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

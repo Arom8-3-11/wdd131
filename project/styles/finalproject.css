@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --primary-color: #430102;
     --secondary-color: #f7b44f;
     --tertiary-color: black;
@@ -15,9 +15,9 @@
     box-sizing: border-box;
     font-family: var(--primary-font);
     /* background-color: var(--secondary-color); */
-}
+/* } */
 
-body {
+/* body {
     background-color: var(--secondary-color);
 
 }
@@ -38,10 +38,101 @@ header img {
     width: 300px;
     height: auto;
     /* border-radius: 50%; */
-    margin-right: 1rem; 
-    
+    /* margin-right: 1rem;  */
+ /* } */ 
+
+:root {
+    --primary-color: #430102;
+    --secondary-color: #f7b44f;
+    --tertiary-color: black;
+    --quaternary-color: white;
+    --accent1-color: #575706;
+
+    --primary-font: 'Roboto', sans-serif;
+
 }
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+
+body {
+    background-color: var(--secondary-color);
+
+}
+header, footer{
+    background-color: var(--primary-color);
+    color: var(--quaternary-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+nav a {
+    color: var(--quaternary-color);
+    background-color: var(--tertiary-color);
+    /* text-shadow: 5px 5px 8px black; */
+    text-align: center;
+    width: 200px;
+    /* max-width: 840px; */
+    height: auto;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 5px 5px 5px 3px black;
+    border: 5px solid;
+    border-color:  var(--secondary-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    border-color: var(--accent1-color);
+    box-shadow: none;
+}
+
+header img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    margin: 1rem; 
+}
+h2 {
+    text-align: center;
+}
+main {
+    font-weight: 600;
+}
+main p {
+    margin: 2rem;
+    width: 90%;
+}
+li { 
+    list-style-type: none;
+    margin: 1rem;
+}
 
 
 
