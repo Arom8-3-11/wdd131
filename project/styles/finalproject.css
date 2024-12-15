@@ -123,6 +123,15 @@ li {
 
 
 /* contact page */
+.contact h1 {
+    display: block;
+    text-align: center;
+    margin: 1rem;
+    font-size: clamp(1.5rem, 8vw, 3rem);
+    font-weight: 800;
+    padding: 0 400px;
+    /* background-color: var(--accent1-color); */
+}
 .contact {
     display: flex;
     flex-wrap: wrap;
@@ -255,17 +264,18 @@ li {
 .alt-imgs {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     gap: 1rem;
+    margin: 1rem 0;
 }
 .img-2 {
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     height: auto;
     margin: auto;
     padding: 20px;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
 
 }
 
