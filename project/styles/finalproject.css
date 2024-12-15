@@ -134,6 +134,13 @@ li {
     margin: 1rem;
 }
 
+.recipes img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 1rem;
+}
+
 
 
 
